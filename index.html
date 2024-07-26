@@ -39,13 +39,9 @@
             const followersElement = document.querySelector('#followers');
             const followingElement = document.querySelector('#following');
             const linkElement = document.querySelector('#link');
-            
-            const token = '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';
 
             fetch('https://api.github.com/users/VictorMoraisBH', {
-                headers: {
-                    'Authorization': `token ${token}`
-                }
+                
             })
                 .then(response => response.json())
                 .then(data => {
